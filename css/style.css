@@ -124,11 +124,11 @@ body.showCart .container{
     transform: translateX(-250px);
 }
 .cart-tab{
-    width: 400px;
+    width: 450px;
     background-color: grey;
     color: white;
     position: fixed;
-    inset: 0 -400px 0 auto;
+    inset: 0 -450px 0 auto;
     display: grid;
     grid-template-rows: 70px 1fr 70px;
     transition: .5s;
@@ -185,7 +185,16 @@ body.showCart .container{
 .listCart{
     overflow: auto;
 }
-
+.total-amount{
+    margin-left: 10px;
+    font-weight: bold;
+}
+.total-amount span{
+    background: rgb(168, 94, 135);
+    border: 1px solid rgb(219, 208, 208);
+    padding: .5rem;
+    margin-left: 10px;
+}
 .footer{
     margin-top: 20px;
     background-color: grey;
