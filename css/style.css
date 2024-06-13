@@ -130,7 +130,7 @@ body.showCart .container{
     position: fixed;
     inset: 0 -450px 0 auto;
     display: grid;
-    grid-template-rows: 70px 1fr 70px;
+    grid-template-rows: 70px 1fr 70px 50px;
     transition: .5s;
     box-shadow: rgba(0, 0, 0, 0.02) 0px 1px 3px 0px, rgba(27, 31, 35, 0.15) 0px 0px 0px 1px;
 }
