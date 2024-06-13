@@ -186,6 +186,7 @@ body.showCart .container{
     overflow: auto;
 }
 .total-amount{
+    padding: 1rem;
     margin-left: 10px;
     font-weight: bold;
 }
