@@ -8,6 +8,7 @@
             let closeCart = document.querySelector('.close');
             let listCartHtml = document.querySelector('.listCart');
             let iconCartSpan = document.querySelector('.iconCart span');
+            let totalAmountSpan = document.querySelector('.total-amount #total-amount');
 
             // Initializes an empty array 'carts' to store cart items.
             let carts = [];
@@ -140,6 +141,9 @@
                             </div>
                         </div>`;
                 });
+
+              // updates  the total amount of items in the cart
+                totalAmountSpan.textContent = carts.reduce((total, cartItem) => total + (cartItem.product.price * cartItem.quantity), 0).toFixed(2);
 
                 // Updates the cart icon's span element to show the total quantity of items in the cart.
                 iconCartSpan.textContent = carts.reduce((total, cartItem) => total + cartItem.quantity, 0);
